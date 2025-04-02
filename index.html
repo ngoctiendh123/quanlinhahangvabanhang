@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Ứng dụng</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Quản lý Ứng dụng</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Quản lý Bán Hàng</a></li>
+            <li><a href="quanlibanan.html">Quản lý Nhà Hàng</a></li>
+        </ul>
+    </nav>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(() => console.log('✅ Service Worker đăng ký thành công!'))
+                .catch(error => console.error('❌ Service Worker lỗi:', error));
+        }
+    </script>
+    <link rel="manifest" href="manifest.json">
+    <script src="indexgiaodien.jsjs"></script>
+</body>
