@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="thanhtoan.css">
+</head>
+<body>
+
+    <header>
+        <h1>💳 Thanh toán hóa đơn</h1>
+    </header>
+
+    <main class="payment-container">
+        <h2 id="table-info">🔖 Bàn số: </h2>
+        <h2 id="total-amount">💰 Tổng tiền: </h2>
+        <ul id="cart-list"></ul>
+
+        <div class="payment-methods">
+            <h3>Chọn phương thức thanh toán:</h3>
+
+            <!-- Quét mã QR -->
+            <div class="qr-payment">
+                <h4>📲 Quét mã QR</h4>
+                <img id="qr-code" src="" alt="Mã QR thanh toán">
+            </div>
+
+            <!-- Thanh toán tiền mặt -->
+            <div class="cash-payment">
+                <h4>💵 Thanh toán tiền mặt</h4>
+                <button id="confirm-payment-btn">Xác nhận thanh toán</button>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="thanhtoan.js"></script>
+</body>
+</html>

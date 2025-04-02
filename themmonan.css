@@ -1,0 +1,133 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Thiết lập màu sắc chính */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #f8f9fa;
+    --text-color: #333;
+    --button-hover: #0056b3;
+}
+
+/* Toàn bộ trang */
+body {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form thêm món ăn */
+.form-section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-section button {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-section button:hover {
+    background-color: var(--button-hover);
+}
+
+/* Danh sách món ăn */
+.list-section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-section h2 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+#foodList {
+    list-style: none;
+    padding: 0;
+}
+
+#foodList li {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.food-info {
+    flex: 1;
+    text-align: left;
+}
+
+.food-actions button {
+    margin-left: 5px;
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.food-actions button:hover {
+    background: darkred;
+}
+
+/* Đáp ứng trên điện thoại */
+@media (max-width: 600px) {
+    .form-section,
+    .list-section {
+        width: 100%;
+    }
+
+    .form-section button {
+        font-size: 16px;
+    }
+}

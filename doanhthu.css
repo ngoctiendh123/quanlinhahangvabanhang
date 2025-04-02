@@ -1,0 +1,123 @@
+/* Đặt các kiểu mặc định */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Nút quay lại */
+#back-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#back-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Bảng Doanh Thu */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tfoot {
+    font-weight: bold;
+    background-color: #f1f1f1;
+}
+
+/* Media Queries - Thiết kế thích nghi với các kích thước màn hình */
+
+/* Màn hình rộng (Desktop) */
+@media (min-width: 1024px) {
+    #back-btn {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+
+    table {
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+}
+
+/* Màn hình vừa (Tablet) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    #back-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+/* Màn hình nhỏ (Mobile) */
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    #back-btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}

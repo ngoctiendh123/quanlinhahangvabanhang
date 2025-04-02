@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin bàn ăn</title>
+    <link rel="stylesheet" href="banan.css">
+</head>
+<body>
+    <header>
+        <h1>Thông tin bàn ăn</h1>
+        <button class="back-btn" onclick="goBack()">
+            ← Quay lại
+        </button>
+        <input type="text" id="search-food" placeholder="🔍 Tìm món ăn..." oninput="searchFood()">
+        <button class="pay-btn" id="checkout-btn">Thanh toán</button>
+
+
+
+    </header>
+
+    <main class="container">
+        <!-- Cột trái: Danh sách món ăn -->
+        <section class="food-menu">
+            <h2>🍽️ Danh sách món ăn</h2>
+            <div id="food-list"></div>
+        </section>
+    
+        <!-- Cột phải: Món đã chọn -->
+        <section class="selected-food">
+            <h2>📝 Món đã chọn</h2>
+            <div id="selected-list"></div>
+            <div id="cart-items"></div>
+
+        </section>
+    </main>
+
+<script type="module" src="banan.js"></script>
+
+</body>
+</html>

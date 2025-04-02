@@ -1,0 +1,92 @@
+/* Tổng thể */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background: white;
+    color: #007bff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+.payment-methods {
+    margin-top: 20px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Nút thanh toán */
+button:nth-child(1) {
+    background: #28a745;
+    color: white;
+}
+
+button:nth-child(2) {
+    background: #dc3545;
+    color: white;
+}
+
+/* Mã QR */
+.qr-payment {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.qr-payment img {
+    width: 150px; /* Điều chỉnh kích thước nhỏ hơn */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Căn giữa */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+}
+

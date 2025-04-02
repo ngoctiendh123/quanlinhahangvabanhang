@@ -1,0 +1,111 @@
+/* Container chứa 2 cột */
+main.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+    flex-wrap: nowrap;  /* Luôn giữ 2 cột */
+}
+
+/* Cột trái và phải */
+.food-menu,
+.selected-food {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    min-height: 300px; /* Để 2 cột bằng nhau */
+    overflow-y: auto;
+}
+
+/* Đảm bảo luôn hiển thị 2 cột ngay cả trên điện thoại */
+@media (max-width: 768px) {
+    main.container {
+        flex-wrap: nowrap; /* Giữ layout 2 cột trên điện thoại */
+    }
+
+    .food-menu,
+    .selected-food {
+        width: 48%; /* Chia đều mỗi phần 50% */
+    }
+}
+
+/* Item món ăn */
+.food-item,
+.selected-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.food-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.food-item button:hover {
+    background-color: #0056b3;
+}
+
+.selected-item button {
+    background-color: red; 
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selected-item button:hover {
+    background-color: darkred;
+}
+button.back-btn {
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.3s ease;
+}
+
+button.back-btn:hover {
+    background: #0056b3;
+}
+
+button.back-btn i {
+    font-size: 18px;
+}
+button.pay-btn {
+    background: #28a745;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+button.pay-btn:hover {
+    background: #218838;
+}
