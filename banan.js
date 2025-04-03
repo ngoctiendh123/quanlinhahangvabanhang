@@ -79,9 +79,9 @@ export function renderFoodList(foods) {
         div.innerHTML = `
             <span>${food.name} - ${food.price} VND</span>
             <div class="food-buttons">
-        <button class="edit-food" data-id="${food.id}">✏ Sửa</button>
-        <button class="delete-food" data-id="${food.id}">🗑 Xóa</button>
-        <button class="add-to-cart" data-id="${food.id}" data-name="${food.name}" data-price="${food.price}">🛒 Giỏ hàng</button>
+        <button class="edit-food" data-id="${food.id}">✏</button>
+        <button class="delete-food" data-id="${food.id}">🗑</button>
+        <button class="add-to-cart" data-id="${food.id}" data-name="${food.name}" data-price="${food.price}">🛒</button>
     </div>
         `;
         foodList.appendChild(div);
