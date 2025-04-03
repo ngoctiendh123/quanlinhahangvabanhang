@@ -109,3 +109,48 @@ button.pay-btn {
 button.pay-btn:hover {
     background: #218838;
 }
+/* Định dạng mỗi món ăn */
+.food-item {
+    display: flex;
+    flex-direction: column; /* Xếp dọc nội dung */
+    align-items: flex-start;
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+/* Đảm bảo tên món + giá tiền cùng một hàng */
+.food-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Các nút nằm dưới và cùng một hàng */
+.food-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.food-buttons button {
+    flex: 1; /* Chia đều khoảng cách */
+    margin: 0 4px;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.food-buttons button:hover {
+    opacity: 0.8;
+}
