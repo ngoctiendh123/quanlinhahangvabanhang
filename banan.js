@@ -1,5 +1,5 @@
 import { getAllFoodsFromIndexedDB, listenToFirebase } from './index.js';
-import { updateFood, deleteFood as deleteFoodFromList } from './fire.js';
+import { updateFood, deleteFood} from './fire.js';
 
 function goBack() {
     window.location.href = "quanlibanan.html"; // Quay về danh sách bàn ăn
