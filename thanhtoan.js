@@ -44,7 +44,7 @@ function generateQRCode(tableId, totalAmount) {
         return;
     }
 
-    const qrUrl = `https://img.vietqr.io/image/MbBank-0858282188-compact.jpg?amount=${totalAmount}&addInfo=ThanhToanBàn${tableId}&size=300x300`;
+    const qrUrl = `https://img.vietqr.io/image/MbBank-0060112236868-compact.jpg?amount=${totalAmount}&addInfo=ThanhToanBàn${tableId}&size=300x300`;
     qrImg.src = qrUrl;
     console.log("✅ Mã QR đã được tạo:", qrUrl);
 }
