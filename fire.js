@@ -82,7 +82,7 @@ async function addFood(name, price) {
         alert("❌ Không thể thêm món ăn, vui lòng thử lại!");
     }
 }
-async function fetchFoods() {
+export async function fetchFoods() {
     const foodsCollection = collection(db, "foods");
     const snapshot = await getDocs(foodsCollection);
     
